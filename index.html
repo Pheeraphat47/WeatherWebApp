@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,45 @@
     <title>WeatherApp</title>
     <meta name="description" content="WeatherApp using Open Weather API">
     <link rel="icon" type="image/x-icon" href="/logo/cloud.png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <main>
+        <!-- ส่วนของการค้นข้อมูล -->
+        <header>
+            <h1>Weather App</h1>
+            <form id="form">
+                <input type="text" placeholder="Search City Name ... " id="search">
+                <button type="submit">Search</button>
+            </form>
+
+        </header>
+        <!-- ส่วนของการแสดงผลข้อมูล -->
+        <section>
+            <div id="location">
+                <h1 id="city">Bangkok</h1>
+                <p id="state">TH</p>
+            </div>
+
+            <div id="card">
+               <div id="weather">
+                   <h1>35</h1>
+                   <small>max : 21 , min : 37</small>
+               </div>
+
+               <div id="info">
+                   <div id="status">Hot</div>
+                   <div id="humidity">100</div>
+                   <div id="wind">4.0</div>
+               </div>
+            </div>
+             
+
+        </section>
+    </main>
+
 </body>
+
 </html>
